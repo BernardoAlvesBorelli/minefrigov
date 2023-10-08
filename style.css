@@ -60,6 +60,47 @@ nav#menu-principal ul li a {
     transition: .2s;
 }
 
+#hamburguer {
+    display: none;
+}
+
 nav#menu-principal ul li a:hover {
     background-color: var(--cor4);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 00px 0px 0px;
+    }
+
+    #hamburguer {
+        margin-top: 10px;
+        display: block;
+        padding: 20px;
+        transition: .2s;
+        cursor: pointer;
+        font-size: 1.8em;
+    }
+
+    #hamburguer:hover {
+        transition: .2s;
+        background-color: var(--cor4);
+    }
+
+    nav#menu-principal {
+        padding: 0px;
+        display: none;
+    }
+
+    nav#menu-principal ul li {
+        display: block;
+        padding: 0px;
+        margin: auto;
+    }
+
+    nav#menu-principal ul li a {
+        display: block;
+        width: 100%;
+        padding: 25px;
+    }
 }
